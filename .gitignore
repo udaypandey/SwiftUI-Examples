@@ -1,0 +1,49 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+/build
+DerivedData
+dist
+dist_all
+TempBuildData
+.DS_STORE
+*/Build/*
+*/Index/*
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+--*/xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.pyc
+IDEWorkspaceChecks.plist
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## node / yarn
+#node_modules
+yarn-offline-mirror
+yarn-error.log
+Index
+#package-lock.json
+#yarn.lock
+
+# Bloody New Relic
+upload_dsym_results
+.bundle
