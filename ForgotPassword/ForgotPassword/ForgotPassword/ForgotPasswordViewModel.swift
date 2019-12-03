@@ -14,7 +14,7 @@ class ForgotPasswordViewModel: ObservableObject {
     @Published var userName = ""
 
     // Output
-    var sendResetPasswordRequest = false
+    @Published var sendResetPasswordRequest = false
 
     private var cancellables: Set<AnyCancellable> = Set([])
 
