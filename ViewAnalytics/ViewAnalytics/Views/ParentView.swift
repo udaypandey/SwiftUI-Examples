@@ -19,12 +19,12 @@ struct ParentView: View {
                     .font(.largeTitle)
                     .navigationBarTitle("Parent", displayMode: .inline)
             }
-        }
-        .onAppear {
-            self.analytics.track("Entering ParentView: \(self.viewIdentifier)")
-        }
-        .onDisappear {
-            self.analytics.track("Leaving ParentView: \(self.viewIdentifier)")
+            .onAppear {
+                self.analytics.track("Entering ParentView: \(self.viewIdentifier)")
+            }
+            .onDisappear {
+                self.analytics.track("Leaving ParentView: \(self.viewIdentifier)")
+            }
         }
     }
 }
